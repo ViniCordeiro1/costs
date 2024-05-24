@@ -16,7 +16,7 @@
           "id": "79475653-9d65-4eb0-921b-9b12b6c6be52"
         }
       ],
-      "id": 2
+      "id": "2"
     },
     {
       "name": "Desenvolvimento do novo site",
@@ -27,24 +27,45 @@
       },
       "cost": 0,
       "services": [],
-      "id": 3
+      "id": "3"
+    },
+    {
+      "id": "3525",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "6728",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "name": "teste",
+      "budget": "12321312",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "5009",
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Infra"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Desenvolvimento"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Design"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Planejamento"
     }
   ]

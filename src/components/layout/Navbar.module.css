@@ -1,7 +1,9 @@
 .navbar {
     display: flex;
+    height: 30px;
+    align-items: center;
     justify-content: space-between;
-    background-color: #222;
+    background-color: #ADB9FD;
     padding: 1em;
   }
   
@@ -9,6 +11,7 @@
     display: flex;
     list-style: none;
     align-items: center;
+    margin-left: 700px;
   }
   
   .item {
@@ -16,11 +19,17 @@
   }
   
   .item a {
-    color: #fff;
+    color: #111111;
     text-decoration: none;
+    cursor: pointer;
   }
   
   .item a:hover {
-    color: #ffbb33;
+    color: #4d87e1;
     text-decoration: none;
+    transition: 0.5s;
+  }
+
+  img {
+    width: 40px;
   }
