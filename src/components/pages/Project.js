@@ -1,4 +1,4 @@
-import { parse, v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid'
 
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -25,7 +25,7 @@ function Project() {
     // Para ver o loading
     setTimeout(
       () =>
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`http://localhost:8000/projects/${id}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ function Project() {
       return false
     }
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
+    fetch(`http://localhost:8000/projects/${project.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ function Project() {
     // add service cost to project cost total
     project.cost = newCost
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
+    fetch(`http://localhost:8000/projects/${project.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ function Project() {
     projectUpdated.services = servicesUpdated
     projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
 
-    fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+    fetch(`http://localhost:8000/projects/${projectUpdated.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
